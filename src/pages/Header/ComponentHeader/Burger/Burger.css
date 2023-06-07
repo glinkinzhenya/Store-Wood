@@ -1,0 +1,25 @@
+.link {
+    color: white;
+}
+
+.link:hover {
+    color: #F07C00 !important;
+}
+
+.Box {
+    height: 100%;
+    width: 250px;
+}
+
+@media (max-width: 1200px) {}
+
+@media (max-width: 992px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 576.8px) {
+    .Box {
+        /* width: 50%; */
+        width: 50vw;
+    }
+}

@@ -1,0 +1,16 @@
+.admin {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(255, 255, 255, 0.636);
+    border-radius: 20px;
+    padding: 30px;
+    margin-top: 5%;
+    gap: 10px;
+}

@@ -1,0 +1,272 @@
+.footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: green;
+}
+
+.footer-primary {
+    display: grid;
+    grid-template-columns: 1fr 250px 250px 1fr;
+    grid-template-areas:
+        "left catalog info right";
+    gap: 40px;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.footer-left {
+    grid-area: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.footer-left__picture {
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+.footer-left__image {
+    width: 100%;
+}
+
+.footer-left__text {
+    color: grey;
+    width: 235px;
+}
+
+.footer-catalog {
+    grid-area: catalog;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    width: 200px;
+    /* background-color: red; */
+}
+
+.footer-info {
+    grid-area: info;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    width: 200px;
+    /* background-color: green; */
+}
+
+.footer-catalog__title,
+.footer-info__title {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.footer-catalog__item,
+.footer-info__item {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.footer-catalog__item:hover,
+.footer-info__item:hover {
+    color: #F07C00 !important;
+}
+
+.footer-right {
+    grid-area: right;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-right__title {
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+}
+
+.footer-right__item {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-right__item-address {
+    font-size: 15px;
+    font-weight: 400;
+
+    color: #F07C00 !important;
+}
+
+.footer-right__item-address:hover,
+.footer-right__item-telephone:hover {
+    color: white !important;
+}
+
+.footer-right__item-telephone {
+    font-size: 15px;
+    font-weight: 400;
+    color: #F07C00 !important;
+}
+
+.footer-right__item-image {
+    width: 20px;
+    padding-right: 5px;
+}
+
+.footer-secondary {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-secondary__social {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-secondary__social-image {
+    width: 40px;
+}
+
+.footer-secondary__telephone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-secondary__telephone-link {
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+}
+
+.footer-secondary__telephone-image {
+    width: 30px;
+    margin-right: 10px;
+}
+
+
+.footer-secondary__telephone-grafic {
+    font-size: 15px;
+    font-weight: 400;
+    color: white;
+}
+
+.footer-secondary__info {
+    color: white;
+}
+
+/* $xl: 1200px;
+$lg: 992px;
+$md: 768px;
+$sm: 576px; */
+
+@media (max-width: 1200px) {
+    .footer-primary {
+        justify-items: center;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "catalog info"
+            "left right";
+    }
+
+    .footer-right {
+   width: 300px;
+    }
+ 
+}
+
+@media (max-width: 992px) {
+
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 576px) {
+
+       .footer-primary {
+        gap: 20px;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "catalog"
+            "info"
+            "left"
+            "right";
+    }
+
+    .footer-left {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+    }
+
+    .footer-left__text {
+    text-align: center;
+    }
+
+    .footer-secondary {
+        flex-direction: column;
+    }
+
+    .footer-catalog {
+        align-items: center;
+        /* max-width: 200px; */
+    }
+    
+    .footer-info {
+        align-items: center;
+        /* max-width: 200px; */
+    }
+
+    .footer-right {
+        align-items: center;
+    }
+
+    .footer-right__item {
+        align-items: center;
+    }
+
+    .footer-right__item-address {
+     text-align: center;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.social {
+    width: 25px;
+    height: auto;
+    padding: 8px;
+    cursor: pointer;
+}
